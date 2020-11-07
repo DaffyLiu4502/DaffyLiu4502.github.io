@@ -142,65 +142,6 @@
 	#header-wrapper {
 	  position: relative;
 	  background-color: #40476D;
-	  width: 100%;
-	}
-
-	#header {
-	  position: relative;
-	  padding: 3em 0em;
-	  width: 100%;
-	  padding-bottom: 60px;
-	}
-
-	#logo {
-	  position: absolute;
-	  margin-left: 20px;
-	  padding-bottom: 50px;
-	}
-
-	#logo h1 {
-	  font-size: 1.4em;
-	  color: #79C255;
-	}
-
-	#logo a {
-	  text-decoration: none;
-	  color: #f6bd60;
-	}
-
-	#menu {
-	  position: absolute;
-	  top: 3.5em;
-	  right: 0;
-	}
-
-	#menu ul {
-	  display: flex;
-	}
-
-	#menu li {
-	  display: flex;
-	  flex-direction: column;
-	  text-align: center;
-	}
-
-	#menu li a, #menu li span {
-	  padding: 1em 1.5em;
-	  letter-spacing: 1px;
-	  text-decoration: none;
-	  text-transform: uppercase;
-	  font-size: 0.8em;
-	  color: #f6bd60;
-	}
-
-	#menu li:hover a, #menu li.active a, #menu li.active span {
-	  color: #f6bd60;
-	}
-
-	#menu .active a {
-	  border: 2px solid rgba(255, 255, 255, 1);
-	  border-radius: 6px;
-	  color: rgba(255, 255, 255, 1);
 	}
 
 	#banner {
@@ -242,4 +183,112 @@
 	  background-color: green;
 	  color: white;
 	  opacity: 0.5;
+	}
+
+	nav {
+	  background: #40476D;
+	  padding: 0 15px;
+	}
+
+	a {
+	  color: #f6bd60;
+	  text-decoration: none;
+	}
+
+	* {
+	  box-sizing: border-box;
+	  padding: 0;
+	  margin: 0;
+	}
+
+	.menu {
+	  list-style-type: none;
+	}
+
+	.logo {
+	  font-size: 20px;
+	  padding: 7.5px 10px 7.5px 0;
+	}
+
+	.item {
+	  padding: 10px;
+	}
+
+	.item.button {
+	  padding: 9px 5px;
+	}
+
+	.item:not(.button) a:hover,
+	.item a:hover::after {
+	  color: #ccc;
+	}
+
+	/* Mobile menu */
+	.menu {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+
+	.menu li a {
+	  display: block;
+	  padding: 15px 5px;
+	}
+
+	.menu li {
+	  padding: 15px;
+	}
+
+	.item {
+	  order: 3;
+	  width: 100%;
+	  text-align: center;
+	  display: none;
+	}
+
+	.active .item {
+	  display: block;
+	}
+
+	/* Tablet menu */
+	@media all and (min-width: 700px) {
+	  .menu {
+	    justify-content: center;
+	  }
+
+	  .logo {
+	    flex: 1;
+	  }
+
+	  .item {
+	    width: auto;
+	    order: 1;
+	    display: block;
+	  }
+
+	  .menu li {
+	    padding: 10px 15px;
+	    margin: 5px 0;
+	  }
+	}
+
+	/* Desktop menu */
+	@media all and (min-width: 960px) {
+	  .menu {
+	    align-items: flex-start;
+	    flex-wrap: nowrap;
+	    background: none;
+	  }
+
+	  .logo {
+	    order: 0;
+	  }
+
+	  .item {
+	    order: 1;
+	    position: relative;
+	    display: block;
+	    width: auto;
+	  }
 	}
