@@ -265,14 +265,13 @@
 
 		.menu li a {
 		  display: block;
-		  padding: 15px 5px;
 		}
 
 		.item {
 		  order: 3;
 		  width: 100%;
 		  text-align: center;
-		  display: none;
+		  display: flex;
 		}
 	}
 	/* Tablet menu */
