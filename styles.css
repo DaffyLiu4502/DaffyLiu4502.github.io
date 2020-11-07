@@ -274,7 +274,7 @@
 	}
 
 	/* Desktop menu */
-	@media all and (min-width: 960px) {
+	@media all and (min-width: 1440px) {
 	  .menu {
 	    align-items: flex-start;
 	    flex-wrap: nowrap;
