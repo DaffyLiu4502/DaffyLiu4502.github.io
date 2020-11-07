@@ -273,3 +273,23 @@
 	  }
 	}
 
+	/* Desktop menu */
+	@media all and (min-width: 1000px) {
+	  .menu {
+	    align-items: flex-start;
+	    flex-wrap: nowrap;
+	    background: none;
+	  }
+
+	  .logo {
+	    order: 0;
+	  }
+
+	  .item {
+	    order: 1;
+	    position: relative;
+	    display: block;
+	    width: auto;
+	  }
+	}
+
