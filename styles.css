@@ -196,6 +196,7 @@
 	}
 
 	nav {
+		display: flex;
 	  background: #40476D;
 	  padding: 0 15px;
 	}
@@ -299,7 +300,7 @@
 	/* Desktop menu */
 	@media all and (min-width: 1024px) {
 	  .menu {
-	    align-items: flex-start;
+	    align-items:flex-start;
 	    flex-wrap: nowrap;
 	    background: none;
 	  }
@@ -313,5 +314,6 @@
 	    position: relative;
 	    display: block;
 	    width: auto;
+			margin-left: 80px;
 	  }
 	}
