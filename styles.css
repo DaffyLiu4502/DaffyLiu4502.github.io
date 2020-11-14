@@ -116,7 +116,7 @@
 	}
 
 	img {
-	  max-width: 100%;
+	  max-width: 80%;
 	  height: auto;
 	}
 
@@ -130,7 +130,7 @@
 
 	p {
 	  text-align: left;
-	  padding-left: 80px;
+	  padding-left: 40px;
 	  padding-right: 20px;
 	  padding-top: 15px;
 	  padding-bottom: 15px;
@@ -255,7 +255,7 @@
 	}
 
 
-	@media only screen and (max-width: 600px) {
+	@media all and (min-width: 300px) {
 		.menu {
 		  display: flex;
 		  flex-wrap: wrap;
