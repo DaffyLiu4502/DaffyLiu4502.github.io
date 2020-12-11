@@ -88,6 +88,10 @@
 	  font-size: 18px;
 	}
 
+	.Transcript h2 {
+	  color: #40476D;
+	}
+
 	.Transcript q {
 	  font-size: 20px;
 	  font-style: italic;
@@ -103,6 +107,7 @@
 	  padding: 12px 30px;
 	  cursor: pointer;
 	  font-size: 20px;
+	  margin-top: 50px;
 	  margin-bottom: 100px;
 	}
 
@@ -115,15 +120,10 @@
 	  padding-right: 20px;
 	}
 
-	img {
-	  max-width: 80%;
-	  height: auto;
-	}
-
 	figcaption {
 	  background-color: #40476D;
 	  color: #f6bd60;
-	  font-size: 25px;
+	  font-size: 20px;
 	  margin-bottom: 100px;
 	  text-align: left;
 	}
@@ -156,7 +156,6 @@
 
 	#banner {
 	  padding-top: 20px;
-	  ;
 	  text-align: center;
 	}
 
@@ -167,6 +166,29 @@
 
 	#banner .title {
 	  font-size: 2em;
+	}
+
+	#chartContainer {
+	  height: 370px;
+	  width: 90%;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	#chartContainer2 {
+	  height: 370px;
+	  width: 90%;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	#chartContainer3 {
+	  padding-top: 20px;
+	  height: 370px;
+	  width: 90%;
+	  margin-left: auto;
+	  margin-right: auto;
+	  margin-bottom: 100px;
 	}
 
 	.fixed-footer {
@@ -196,7 +218,7 @@
 	}
 
 	nav {
-		display: flex;
+	  display: flex;
 	  background: #40476D;
 	  padding: 0 15px;
 	}
@@ -254,26 +276,26 @@
 	  display: none;
 	}
 
-
 	@media all and (min-width: 300px) {
-		.menu {
-		  display: flex;
-		  flex-wrap: wrap;
-		  justify-content: space-between;
-		  align-items: center;
-		}
+	  .menu {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	    align-items: center;
+	  }
 
-		.menu li a {
-		  display: block;
-		}
+	  .menu li a {
+	    display: block;
+	  }
 
-		.item {
-		  order: 3;
-		  width: 100%;
-		  text-align: center;
-		  display: flex;
-		}
+	  .item {
+	    order: 3;
+	    width: 100%;
+	    text-align: center;
+	    display: flex;
+	  }
 	}
+
 	/* Tablet menu */
 	@media all and (min-width: 768px) and (max-width: 1024px) {
 	  .menu {
@@ -299,7 +321,7 @@
 	/* Desktop menu */
 	@media all and (min-width: 1024px) {
 	  .menu {
-	    align-items:flex-start;
+	    align-items: flex-start;
 	    flex-wrap: nowrap;
 	    background: none;
 	  }
@@ -313,6 +335,81 @@
 	    position: relative;
 	    display: block;
 	    width: auto;
-			margin-left: 80px;
+	    margin-left: 80px;
 	  }
+	}
+
+	/*
+cited from https://codepen.io/Tbgse/pen/dYaJyJ
+*/
+	@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+	.hidden {
+	  opacity: 0;
+	}
+
+	.console-container {
+	  font-family: Khula;
+	  font-size: 1.5em;
+	  text-align: center;
+	  height: 80px;
+	  width: 600px;
+	  display: block;
+	  position: relative;
+	  color: white;
+	  top: 40px;
+	  bottom: 0;
+	  left: -20px;
+	  right: 0;
+	  margin: auto;
+	}
+
+	.console-underscore {
+	  display: inline-block;
+	  position: relative;
+	  top: -0.14em;
+	  left: 10px;
+	}
+
+	.selectHolder {
+	  display: block;
+	  position: fixed;
+	  width: 100%;
+	  background-color: #40476D;
+	  top: 0;
+	  text-align: center;
+	  border-bottom: 1px solid #40476D;
+	}
+
+	.imageGallery {
+	  display: flex;
+	  flex-direction: column;
+	  width: 100%;
+	  max-width: 1000px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.imageHolder {
+	  margin: 10px 0;
+	  font-family: "Helvetica", "Arial", sans-serif;
+	}
+
+	.imageHolder caption {
+	  margin: 10px 0;
+	}
+
+	img {
+	  width: 100%;
+	  max-width: 1000px;
+	}
+
+	.button_holder {
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+	}
+
+	.hideThisDiv {
+	  display: none;
 	}
