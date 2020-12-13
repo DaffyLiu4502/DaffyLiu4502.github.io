@@ -350,7 +350,7 @@ cited from https://codepen.io/Tbgse/pen/dYaJyJ
 
 	.console-container {
 	  font-family: Khula;
-	  font-size: 1.5em;
+	  font-size: 1.2em;
 	  text-align: center;
 	  height: 80px;
 	  width: 600px;
@@ -359,9 +359,8 @@ cited from https://codepen.io/Tbgse/pen/dYaJyJ
 	  color: white;
 	  top: 40px;
 	  bottom: 0;
-	  left: -50px;
-	  right: 0;
-	  margin: auto;
+	  margin-left: auto;
+	  margin-right: auto;
 	}
 
 	.console-underscore {
